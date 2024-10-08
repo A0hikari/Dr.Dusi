@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(190, 235, 235);
+    
+
+    .nav {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+
+    .navbar-buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+
+    .btn{
+        display: flex;
+        background-color: #ff7b00;
+        border-radius: 50px;
+        color: #ffffff;
+        height: 35px;
+        font-size: 20px;
+    }
+
+.Header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(253, 255, 255);
+    border-radius: 20px;
+    margin-top: 50px;
+    height: 100px;
+}
+
+    label {
+    display: inline-block;
+    width: 150px;
+
+    }
+    input[type="range"] {
+    width: 300px;
+
+    }
+    .result {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: green;
+    }
+
+     /* ปิดการใช้งานปุ่ม */
+    #submitBtn:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+    }
+
+    .slider-container {
+        margin-bottom: 15px;
+        padding-top: 50px;
+      }
+      .slider-label {
+        margin-right: 10px;
+      }
+      
+      /* Modal styles */
+      #myModal {
+        display: flex;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.4);
+    }
+    
+      #modalContent {
+        background-color: rgb(161, 161, 161);
+        margin: auto;
+        padding: 20px;
+        border: 10px solid #ffffff;
+        width: 50%;
+        border-radius: 10px;
+    }
+      .close {
+        color: #000000;
+        float: right;
+        font-size: 50px;
+        font-weight: bold;
+    }
+    .close:hover, .close:focus {
+        color: rgb(255, 0, 0);
+        text-decoration: none;
+        cursor: pointer;
+    }
+    button:disabled {
+        background-color: lightgray;
+        cursor: not-allowed;
+    }
+}
+
+#submitBtn {
+    display: flex;
+    background-color: #4CAF50; 
+    color: white; 
+    border: none; 
+    padding: 15px 32px; 
+    text-align: center; 
+    text-decoration: none;
+    font-size: 16px; 
+    margin: 4px 2px;
+    cursor: pointer; 
+    border-radius: 8px; 
+    transition: background-color 0.3s ease; 
+}
+
+#submitBtn:hover {
+    background-color: #45a049; /* เปลี่ยนสีเมื่อชี้ไปที่ปุ่ม */
+}
+
+#submitBtn:disabled {
+    background-color: lightgray; /* สีเมื่อปุ่มถูกปิดการใช้งาน */
+    cursor: not-allowed; /* เปลี่ยนเคอร์เซอร์ */
+}

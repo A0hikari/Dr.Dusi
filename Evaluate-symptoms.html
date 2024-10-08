@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>แบบประเมินอาการเบื้องต้น</title>
+<link rel="stylesheet" href="assets/theme/css/style.css">
+<link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=UxVnBK"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=UxVnBK" type="text/css">
+<link rel="stylesheet" href="Evaluate-symptoms.css">
+<script src="Evaluate-symptoms.js"></script>
+
+</head>
+<body>
+    <section class="menu menu1 cid-tJGsCG1vVL" id="menu01-1">
+		<nav class="nav">
+			<div class="container">
+				<div class="navbar-brand">
+					<a href="Home.html">
+						<img src="assets/images/dr.dusi-removebg-preview-6.png" alt="Mobirise Website Builder" style="height: 3rem;">
+					</a>
+				</div>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav nav-dropdown">
+						<li class="nav-item">
+							<a class="nav-link link text-success display-4" href="index.html#contacts3-1"></a>
+						</li>
+					</ul>
+					<div class="navbar-buttons">
+						<a class="btn " href="Home.html#contacts02-3">โรงพยาบาลใกล้คุณ</a>
+						<a class="btn " href="Home.html#contacts02-4">ร้านยาคุณภาพใกล้คุณ</a>
+						<a class="btn " href="Home.html#list01-8">วิธีดูแลตัวเอง</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+<div class="Header">
+    <h1>แบบประเมินอาการเบื้องต้น</h1>
+</div>
+
+<div class="slider-container">
+    <label class="slider-label">ปวดหัว: </label>
+    <input type="range" id="headache" min="0" max="10" value="0" oninput="updateValue(this, 'headacheValue')">
+    <span id="headacheValue">0</span>/10
+  </div>
+  
+  <div class="slider-container">
+    <label class="slider-label">คลื่นไส้: </label>
+    <input type="range" id="nausea" min="0" max="10" value="0" oninput="updateValue(this, 'nauseaValue')">
+    <span id="nauseaValue">0</span>/10
+  </div>
+  
+  <div class="slider-container">
+    <label class="slider-label">อาการบาดเจ็บ: </label>
+    <input type="range" id="injury" min="0" max="10" value="0" oninput="updateValue(this, 'injuryValue')">
+    <span id="injuryValue">0</span>/10
+  </div>
+  
+  <div class="slider-container">
+    <label class="slider-label">ไอ: </label>
+    <input type="range" id="cough" min="0" max="10" value="0" oninput="updateValue(this, 'coughValue')">
+    <span id="coughValue">0</span>/10
+  </div>
+  
+  <div class="slider-container">
+    <label class="slider-label">น้ำมูกไหล: </label>
+    <input type="range" id="runnyNose" min="0" max="10" value="0" oninput="updateValue(this, 'runnyNoseValue')">
+    <span id="runnyNoseValue">0</span>/10
+  </div>
+  
+  <div class="slider-container">
+    <label class="slider-label">ปวดร่างกาย: </label>
+    <input type="range" id="bodyAche" min="0" max="10" value="0" oninput="updateValue(this, 'bodyAcheValue')">
+    <span id="bodyAcheValue">0</span>/10
+  </div>
+  
+  <button id="submitBtn" onclick="submitQuiz()" disabled>ส่งประเมิน</button>
+  
+  <!-- Modal -->
+  <div id="myModal">
+    <div id="modalContent">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div id="modalResult"></div>
+    </div>
+  </div>
